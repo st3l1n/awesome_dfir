@@ -1872,7 +1872,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-# Приложение 5: Покрытие артефактов по инструментам
+## Приложение 5: Покрытие артефактов по инструментам
 
 Сравнительная таблица показывает, какие артефакты собирают три основных macOS IR-инструмента:
 **UAC** , **Aftermath** и **Velociraptor**.
@@ -1884,7 +1884,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 1. Persistence
+### 1. Persistence
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1899,7 +1899,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 2. Process
+### 2. Process
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1909,7 +1909,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 3. Network
+### 3. Network
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1925,7 +1925,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 4. File System
+### 4. File System
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1937,7 +1937,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 5. User Activity
+### 5. User Activity
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1952,7 +1952,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 6. System Logs
+### 6. System Logs
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1963,7 +1963,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 7. Authentication
+### 7. Authentication
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1976,7 +1976,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 8. Applications
+### 8. Applications
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1986,7 +1986,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 9. Cloud & Sync
+### 9. Cloud & Sync
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -1996,7 +1996,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 10. Security State
+### 10. Security State
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -2007,7 +2007,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 11. Memory & Volatile
+### 11. Memory & Volatile
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -2017,7 +2017,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 12. External Devices
+### 12. External Devices
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -2026,7 +2026,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## 13. Communication
+### 13. Communication
 
 | Артефакт | UAC | Aftermath | Velociraptor | Примечания |
 |---|:---:|:---:|:---:|---|
@@ -2035,7 +2035,7 @@ echo "[+] Size: $(du -sh "$OUTPUT" | awk '{print $1}')"
 
 ---
 
-## Сводка по инструментам
+### Сводка по инструментам
 
 | | UAC | Aftermath | Velociraptor |
 |---|---|---|---|
