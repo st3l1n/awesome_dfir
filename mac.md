@@ -31,15 +31,16 @@
 | [6](#6-system-logs) | **System Logs** | Unified Logs, Install Log, Crash Reports |
 | [7](#7-authentication) | **Authentication** | TCC, Keychain, sudo, SSH, пользователи |
 | [8](#8-applications) | **Applications** | Установки, подписи, CUPS |
-| [9](#9-cloud--sync) | **Cloud & Sync** | iCloud, Time Machine, Dropbox |
+| [9](#9-cloud-sync) | **Cloud & Sync** | iCloud, Time Machine, Dropbox |
 | [10](#10-security-state) | **Security State** | SIP, Gatekeeper, FileVault, XProtect |
-| [11](#11-memory--volatile) | **Memory** | RAM-дамп, переменные окружения, lsof |
+| [11](#11-memory-volatile) | **Memory & Volatile** | RAM-дамп, переменные окружения, lsof |
 | [12](#12-external-devices) | **External Devices** | USB, Bluetooth |
-| [13](#13-email--communication) | **Communication** | Mail, iMessage, Slack |
-| [A](#appendix-a-порядок-сбора) | **Appendix A** | Order of Volatility |
-| [B](#appendix-b-быстрый-ir-скрипт) | **Appendix B** | Быстрый IR-скрипт |
-| [C](#appendix-c-инструменты) | **Appendix C** | Инструменты сбора и анализа |
-| [D](#appendix-d-ссылки) | **Appendix D** | Ссылки |
+| [13](#13-email-communication) | **Email & Communication** | Mail, iMessage, Slack |
+| [П1](#приложение-1-порядок-сбора) | **Приложение 1** | Order of Volatility |
+| [П2](#приложение-2-быстрый-ir-скрипт) | **Приложение 2** | Быстрый IR-скрипт |
+| [П3](#приложение-3-инструменты) | **Приложение 3** | Инструменты сбора и анализа |
+| [П4](#приложение-4-ссылки) | **Приложение 4** | Ссылки |
+| [П5](#приложение-5-покрытие-артефактов-по-инструментам) | **Приложение 5** | Покрытие артефактов по инструментам |
 
 ---
 
