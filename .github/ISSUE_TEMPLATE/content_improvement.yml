@@ -1,0 +1,72 @@
+name: "Улучшение существующего контента"
+description: "Предложить улучшение описания, команды, структуры или форматирования"
+title: "[Improvement] "
+labels: ["improvement", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Видите, что какой-то раздел можно сделать лучше? Расскажите нам!
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Платформа
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Общее / Несколько
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Раздел / Артефакт
+      description: Укажите конкретный раздел или артефакт
+      placeholder: "Network → DNS Cache"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: improvement_type
+    attributes:
+      label: Тип улучшения
+      options:
+        - Улучшение описания (что такое / на какие вопросы отвечает)
+        - Добавление команды парсинга / примера
+        - Добавление инструмента
+        - Улучшение структуры / форматирования
+        - Добавление ссылок / источников
+        - Перевод на английский язык
+        - Другое
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Текущая ситуация
+      description: Что именно хотите улучшить?
+      placeholder: "В разделе 'DNS Cache' не хватает примера для macOS 15..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Предложение
+      description: Как должно выглядеть улучшение?
+      placeholder: |
+        Предлагаю добавить команду:
+        ```bash
+        sudo dscacheutil -cachedump -entries Host
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст

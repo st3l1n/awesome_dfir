@@ -1,0 +1,64 @@
+name: "Ошибка в документации"
+description: "Нашли некорректную команду, устаревший путь или неверную информацию"
+title: "[Bug] "
+labels: ["bug", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что помогаете улучшить документацию! Пожалуйста, заполните форму максимально подробно.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Платформа
+      description: В документации для какой ОС обнаружена ошибка?
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Несколько платформ
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Раздел / Артефакт
+      description: Укажите раздел или конкретный артефакт (например, "Persistence → Systemd units")
+      placeholder: "Persistence → Cron jobs"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание ошибки
+      description: Что именно неверно? Укажите некорректную команду, путь или описание.
+      placeholder: |
+        Команда `journalctl -u cron` возвращает ошибку на Ubuntu 22.04.
+        Правильная команда: `journalctl -u cron.service`
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Корректная информация
+      description: Как должно быть правильно?
+      placeholder: "Правильный путь / команда / описание..."
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: Версия ОС
+      description: На какой версии системы воспроизводится проблема?
+      placeholder: "Ubuntu 24.04, Windows 11 23H2, macOS 15.3..."
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст
+      description: Ссылки на документацию, скриншоты, вывод команд и т.д.

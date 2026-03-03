@@ -1,0 +1,80 @@
+name: "Запрос нового контента"
+description: "Предложить добавить новый артефакт, раздел или платформу"
+title: "[Request] "
+labels: ["enhancement", "content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Есть идея для расширения документации? Отлично! Расскажите, что стоит добавить.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Тип запроса
+      options:
+        - Новый артефакт в существующем разделе
+        - Новый раздел для существующей платформы
+        - Новая платформа (cloud, containers, k8s, network и др.)
+        - Новый инструмент / ссылка
+        - Другое
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Платформа
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Cloud
+        - Containers / Docker
+        - Kubernetes
+        - Network
+        - Все / Несколько
+        - Новая платформа
+    validations:
+      required: true
+
+  - type: input
+    id: artifact_name
+    attributes:
+      label: Артефакт / Раздел
+      description: Название артефакта или раздела, который предлагаете добавить
+      placeholder: "Windows BITS (Background Intelligent Transfer Service)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: |
+        Что представляет собой этот артефакт?
+        Почему он важен для DFIR?
+        На какие вопросы расследования позволяет ответить?
+      placeholder: |
+        BITS — механизм Windows для фоновой передачи файлов. Используется атакующими для
+        persistence и загрузки payload. Артефакт хранится в %ALLUSERSPROFILE%\Microsoft\Network\Downloader\.
+        Позволяет установить: факт загрузки файлов, URL источника, время создания задачи.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Источники / Ссылки
+      description: Документация, блог-посты, инструменты для работы с артефактом
+      placeholder: |
+        - https://example.com/bits-forensics
+        - Tool: bitsparser (https://github.com/...)
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Готовы ли вы помочь с реализацией?
+      options:
+        - label: "Да, я готов открыть Pull Request с этим контентом"
+        - label: "Нет, только предлагаю идею"
