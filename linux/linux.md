@@ -646,6 +646,7 @@ done
 - Какие файлы открыты у подозрительного процесса?
 - Есть ли процессы с открытыми **удалёнными** файлами (`(deleted)`)?
 - Какие сетевые соединения активны и какой процесс их держит?
+- Есть ли файлы, которые отсутствуют в bodyfile (скрытые от `stat`)?
 
 **Парсинг:**
 ```bash
@@ -1275,6 +1276,8 @@ utmpdump /var/run/utmp
 - Какие process/service запускались и завершались?
 
 **Парсинг:**
+> По умолчанию journalctl выводит данные в часовом поясе системы. Для вывода в UTC добавить параметр `--utc`.
+
 ```bash
 # Все логи за последние 7 дней
 journalctl --since "7 days ago" --no-pager
@@ -1323,6 +1326,8 @@ find /run/log/journal/ /run/journal/ /var/log/journal/ -type f \
 cat /var/log/syslog | tail -1000
 grep -Ei "error|fail|warning|cron|kernel|ssh" /var/log/syslog | tail -200
 ```
+
+> Проверить, в каком часовом поясе пишется syslog. Обычно - в локальном системы.
 
 **Инструменты:** UAC · easy_triage
 
