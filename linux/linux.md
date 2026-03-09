@@ -2393,6 +2393,7 @@ echo "[!] Copy to safe media: tar czf ${OUTPUT}.tgz -C $(dirname $OUTPUT) $(base
 | [**rkhunter**](https://rkhunter.sourceforge.net) | Детектор руткитов | Проверка целостности системы | Сигнатурная + эвристическая проверка |
 | [**chkrootkit**](https://www.chkrootkit.org) | Детектор руткитов | Проверка признаков руткитов | Классический инструмент |
 | [**aureport / ausearch**](https://linux.die.net/man/8/aureport) | Анализ auditd | Парсинг и отчёты auditd | Встроены в пакет auditd |
+| [**known_hosts-hashcat**](https://github.com/chris408/known_hosts-hashcat) | Постобработка артефактов | Восстановление систем из `.ssh/known_hosts` | |
 
 ---
 
